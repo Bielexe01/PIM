@@ -1,7 +1,3 @@
-# =========================================
-# SISTEMA DE SÓCIO TORCEDOR - PIM I
-# Projeto simples em Python
-# =========================================
 
 # listas para armazenar dados
 nomes = []
@@ -19,7 +15,7 @@ def linha():
 # função para mostrar menu
 def menu():
     linha()
-    print(" SISTEMA DE SÓCIO TORCEDOR ")
+    print(" SISTEMA DE SÓCIO TORCEDOR CURINTIA ")
     linha()
     print("1 - Cadastrar Sócio")
     print("2 - Simular Venda de Ingresso")
@@ -30,11 +26,11 @@ def menu():
 
 # função cadastro
 def cadastrar():
-    print("\nCADASTRO DE SÓCIO")
+    print("CADASTRO DE SÓCIO")
 
     nome = input("Nome do torcedor: ")
 
-    print("\nPlanos disponíveis:")
+    print("Planos disponíveis:")
     print("OURO")
     print("PRATA")
     print("BRONZE")
@@ -55,7 +51,7 @@ def cadastrar():
     nomes.append(nome)
     planos.append(plano)
     mensalidades.append(mensalidade)
-    print("\nSócio cadastrado com sucesso!")
+    print("Sócio cadastrado com sucesso!")
 
 
 # função desconto
@@ -96,10 +92,10 @@ def mostrar_ticket(nome, plano, valor_final):
 def vender_ingresso():
 
     if len(nomes) == 0:
-        print("\nNenhum sócio cadastrado.")
+        print("Nenhum sócio cadastrado.")
         return
 
-    print("\nLISTA DE SÓCIOS")
+    print("LISTA DE SÓCIOS")
     for i in range(len(nomes)):
         print(i, "-", nomes[i])
     try:
@@ -125,7 +121,7 @@ def vender_ingresso():
 
     # validação acesso
     if status == False:
-        print("\nACESSO NEGADO")
+        print("ACESSO NEGADO")
         print("Mensalidade em atraso.")
         return
 
@@ -142,7 +138,7 @@ def vender_ingresso():
     if valor_final < 0:
         valor_final = 0
 
-    print("\nCompra realizada com sucesso!")
+    print("Compra realizada com sucesso!")
 
     mostrar_ticket(nome, plano, valor_final)
 
@@ -150,7 +146,7 @@ def vender_ingresso():
 # mostrar sócios
 def listar_socios():
 
-    print("\nSÓCIOS CADASTRADOS")
+    print("SÓCIOS CADASTRADOS")
 
     if len(nomes) == 0:
         print("Nenhum sócio encontrado.")
