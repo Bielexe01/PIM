@@ -188,7 +188,7 @@ while opcao != 0:
         listar_socios()
 
     elif opcao == 0:
-        print("\nSistema encerrado.")
+        print("Sistema encerrado.")
 
     else:
-        print("\nOpção inválida.")
+        print("Opção inválida.")
